@@ -1,0 +1,24 @@
+.buttonWraper {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.button {
+  width: 120px;
+  padding: 5px;
+  background-color: #657af3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover {
+  background-color: #3f51b5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
