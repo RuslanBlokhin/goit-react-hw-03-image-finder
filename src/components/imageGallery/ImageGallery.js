@@ -1,5 +1,5 @@
-import ImageGalleryItem from './imageGalleryItem/ImageGalleryItem'
-import PropTypes from 'prop-types';
+import ImageGalleryItem from "./imageGalleryItem/ImageGalleryItem";
+import PropTypes from "prop-types";
 
 const ImageGallery = ({ showGallery, onImgClick }) => {
   return (
@@ -8,7 +8,7 @@ const ImageGallery = ({ showGallery, onImgClick }) => {
         const handleItemClick = () => onImgClick(largeImageURL);
         return (
           <ImageGalleryItem
-            key={id}
+            key={`${id}`}
             webformatURL={webformatURL}
             onImgClick={handleItemClick}
           />

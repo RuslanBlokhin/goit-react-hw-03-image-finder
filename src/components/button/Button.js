@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import style from "./Button.module.css";
 
-const Button = ({ onClick }) => {
+const Button = ({ onClick, text }) => {
   return (
     <div className={style.buttonWraper}>
       <button className={style.button} type="button" onClick={onClick}>
-        Load more
+        {text}
       </button>
     </div>
   );

@@ -75,7 +75,9 @@ class App extends React.Component {
         <ImageGallery showGallery={gallery} onImgClick={this.imgClick} />
 
         {isLoading && <Loader />}
-        {shouldShowLoadMoreBtn && <Button onClick={this.fetchGallery} />}
+        {shouldShowLoadMoreBtn && (
+          <Button text={"Load more"} onClick={this.fetchGallery} />
+        )}
 
         {showModal && (
           <Modal onClose={this.imgClick}>
