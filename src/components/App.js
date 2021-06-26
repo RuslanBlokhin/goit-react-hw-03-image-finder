@@ -67,7 +67,7 @@ class App extends React.Component {
 
   render() {
     const { showModal, gallery, isLoading, error, largeImage } = this.state;
-    const shouldShowLoadMoreBtn = gallery.length > 0 && !isLoading;
+    const shouldShowLoadMoreBtn = gallery.length >= 1 && !isLoading;
     return (
       <Container>
         {error && <h1>Try again!</h1>}
